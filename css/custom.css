@@ -8,24 +8,28 @@ A5C4BB
 */
 
 header {
+  clear: both;
+  width: 100%;
+  display: block;
 	position:relative;
   margin: auto;
   margin-top: 0px;
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   background-color: #DEC9AC;
   box-shadow: 0 -1px 2px #FAF1D5 inset, 0 1px 4px #CCA18B ;
-  padding: 10px 0 10px 0;
+  padding: 5px 0 5px 0;
 
   }
 
 
 
 header > p {
-  width: 40%;
+
+  font-size: 0.8em;
   margin: auto;
-  margin-top: 12px;
-  margin-bottom: 12px;
-  text-align: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  text-align: center;
   color: #11282D;
 
 
@@ -41,69 +45,12 @@ body {
   background-color: #FAF1D5;
 }
 
-.row {
-  margin-left: 0px;
-  *zoom: 1;
-}
 
-
-[class*="span"] {
-  float: left;
-  min-height: 1px;
-  margin-left: 0px;
-  border: 1px solid #FAF1D5;
-}
-
-
-
-
-.span12 {
-  width: 960px;
-}
-
-.span11 {
-  width: 880px;
-}
-
-.span10 {
-  width: 800px;
-}
-
-.span9 {
-  width: 720px;
-}
-
-.span8 {
-  width: 640px;
-}
-
-.span7 {
-  width: 560px;
-}
-
-.span6 {
-  width: 480px;
-}
-
-.span5 {
-  width: 400px;
-}
-
-.span4 {
-  width: 320px;
-}
-
-.span3 {
-  width: 240px;
-}
-
-.span2 {
-  width: 160px;
-}
-
-.span1 {
-  width: 80px;
-}
+  .row-fluid [class*="span"] {
+    border: 1px solid #FAF1D5;
+    margin-left: 0%;
+    *margin-left: 0%;
+  }
 
 
 
@@ -121,13 +68,13 @@ a:hover, a:focus {
 p {
   margin: 0 0 0px;
   color:#11282D;
+  font-family: georgia, serif;
 }
 
 
 
 img {
   width: auto\9;
-  height: auto;
   max-width: 100%;
   vertical-align: middle;
   border: 0;
@@ -137,8 +84,8 @@ img {
 
 
 .img-polaroid {
+  margin: 0;
   width: auto\9;
-  padding: 4px;
   background-color: #fff;
   border: 1px solid #ccc;
   border: 1px solid rgba(0, 0, 0, 0.2);
@@ -151,20 +98,10 @@ img {
 
   font-family: Georgia, serif ;
   font-style:italic;
-  padding-left: 20px;
-  padding-top: 10px;
-  padding-right: 20px;
+  padding: 10px 20px 10px 20px;
 }
 
-#details-container{
-
-  height: 184px;
-  width: auto/9;
-
-
-}
 article{
-width: 980px;
 margin: auto;
 }
 
@@ -183,6 +120,48 @@ h1{
   text-align: center;
   color: #11282D;
   position: relative;
-  margin-top: -160px;
+  margin-top: -60%;
 
 }
+
+  [class*="span"] {
+    float: left;
+    min-height: 1px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .row-fluid [class*="span"] {
+    display: block;
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    margin-left: 0%;
+    *margin-left: 0%;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .row-fluid [class*="span"]:first-child {
+    margin-left: 0;
+  }
+  .row-fluid .controls-row [class*="span"] + [class*="span"] {
+    margin-left: 0%;
+  }
+
+  .row-fluid .span12 {
+    width: 100%;
+    *width: 99.94680851063829%;
+  }
+  .row-fluid .span6 {
+    width: 50%;
+    *width: 49.97340425531915%;
+  }
+  .row-fluid .span3 {
+    width: 25%;
+    *width: 24.98670212765957%;
+  }
+  .row-fluid .span1 {
+    width: 8.333333333333333%;
+    *width: 8.328900709219858%;
+  }
