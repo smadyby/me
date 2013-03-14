@@ -1,167 +1,151 @@
 /*color pallette:
-echo beatch at dusk:
-FAF1D5
-DEC9AC
-CCA18B
-11282D
-A5C4BB
+d8ecd4 - light green
+e21a4d - magenta
+333430 - grey 
+1e1e1c - shadow 
+
 */
 
-header {
-  clear: both;
-  width: 100%;
-  display: block;
-	position:relative;
-  margin: auto;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  background-color: #DEC9AC;
-  box-shadow: 0 -1px 2px #FAF1D5 inset, 0 1px 4px #CCA18B ;
-  padding: 5px 0 5px 0;
-
-  }
-
-
-
-header > p {
-
-  font-size: 0.8em;
-  margin: auto;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  text-align: center;
-  color: #11282D;
-
-
-}
-
-
-body {
-  margin: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 0.9em;
-  line-height: 20px;
-  color: #333333;
-  background-color: #FAF1D5;
-}
-
-
-  .row-fluid [class*="span"] {
-    border: 1px solid #FAF1D5;
-    margin-left: 0%;
-    *margin-left: 0%;
-  }
-
-
-
-a {
-  color: #A5C4BB;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: #CCA18B;
-  text-decoration: underline;
-}
-
-
-p {
-  margin: 0 0 0px;
-  color:#11282D;
-  font-family: georgia, serif;
-}
-
-
-
-img {
-  width: auto\9;
-  max-width: 100%;
-  vertical-align: middle;
-  border: 0;
-  margin: 0;
-  -ms-interpolation-mode: bicubic;
-}
-
-
-.img-polaroid {
-  margin: 0;
-  width: auto\9;
-  background-color: #fff;
-  border: 1px solid #ccc;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-}
-
-#center-piece{
-
-  font-family: Georgia, serif ;
-  font-style:italic;
-  padding: 10px 20px 10px 20px;
-}
-
-article{
-margin: auto;
-}
-
 footer{
-  font-style: small;
-  font-size: 0.7em;
+  clear: both;
+  display: block;
+  -webkit-box-shadow: 0 9px 7px -9px black;
+     -moz-box-shadow: 0 9px 7px -9px black;
+          box-shadow: 0 9px 7px -9px black;
+}
+
+
+.bg-pic{
+margin-top: 2%;
+width: 90%;
+
+
 
 }
+/*shadow*/
+
+.name-box, .info-box, .buttons .span3 {
+  box-shadow: 1px 2px 2px #1e1e1c;
+  margin-bottom: 8%;
+}
+
+.rotate-left{
+  transform: rotate(-1.5deg);
+  -ms-transform: rotate(-1.5deg); /* IE 9 */
+  -webkit-transform: rotate(-1.5deg); /* Safari and Chrome */
+  -o-transform: rotate(-1.5deg); /* Opera */
+  -moz-transform: rotate(-1.5deg); /* Firefox */
+}
+
+
+.rotate-right{
+  transform: rotate(1.5deg);
+  -ms-transform: rotate(1.5deg); /* IE 9 */
+  -webkit-transform: rotate(1.5deg); /* Safari and Chrome */
+  -o-transform: rotate(1.5deg); /* Opera */
+  -moz-transform: rotate(1.5deg); /* Firefox */
+}
+
+
+.name-box{
+  background-color: #e21a4d;
+  padding: 3% 10% 3% 10%;
+  transform: rotate(2deg);
+  -ms-transform: rotate(2deg); /* IE 9 */
+  -webkit-transform: rotate(2deg); /* Safari and Chrome */
+  -o-transform: rotate(2deg); /* Opera */
+  -moz-transform: rotate(2deg); /* Firefox */
+}
+
+
+.info-box {
+
+  background-color: #d8ecd4;
+  padding: 8% 10% 3% 10%;
+
+}
+
+.info-box p{
+
+  line-height: 1.7em;
+  color: 58,59,55,1 ;
+
+}
+
+.buttons .span3 {
+  background-color: #d8ecd4;
+  text-align: center;
+  padding: 3%;
+  width: auto/9;
+  display: inline-block;
+}
+
+
+.row-fluid .span3 {
+  width: 20.404255319148934%;
+  *width: 20.351063829787233%;
+  margin-right: 2%;
+}
+
+
 
 h1{
-  font-family: 'Lobster Two', cursive; 
-  font-size: 1.9em;
-  line-height: 1.2em;
-  font-weight: bold;
-  font-style: italic;
+  font-family: 'dk_pisangregular', cursive; 
+  font-size: 3.5em;
+  line-height: 1.1em;
   text-align: center;
-  color: #11282D;
+  color: #d8ecd4;
   position: relative;
-  margin-top: -60%;
+  transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg); /* IE 9 */
+  -webkit-transform: rotate(-2deg); /* Safari and Chrome */
+  -o-transform: rotate(-2deg); /* Opera */
+  -moz-transform: rotate(-2deg); /* Firefox */
+
+}
+h1:hover{
+  text-shadow:1px 2px 0px #1e1e1c;
+}
+
+a:hover{
+  color: #e21a4d;
+}
+
+body{
+background: rgb(58,59,55); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzYTNiMzciIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMzMzNDMwIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-radial-gradient(center, ellipse cover,  rgba(58,59,55,1) 0%, rgba(51,52,48,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(58,59,55,1)), color-stop(100%,rgba(51,52,48,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(58,59,55,1) 0%,rgba(51,52,48,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(58,59,55,1) 0%,rgba(51,52,48,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(58,59,55,1) 0%,rgba(51,52,48,1) 100%); /* IE10+ */
+background: radial-gradient(ellipse at center,  rgba(58,59,55,1) 0%,rgba(51,52,48,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3a3b37', endColorstr='#333430',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+background-size: auto/9;
+
+/*background blueprint
+background-color:#333430;
+background-image: linear-gradient(white 2px, transparent 2px),
+linear-gradient(90deg, white 2px, transparent 2px),
+linear-gradient(rgba(255,255,255,.3) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,255,255,.3) 1px, transparent 1px);
+background-size:100px 100px, 100px 100px, 20px 20px, 20px 20px;
+background-position:-2px -2px, -2px -2px, -1px -1px, -1px -1px
+*/
 
 }
 
-  [class*="span"] {
-    float: left;
-    min-height: 1px;
-    margin-left: 0;
-    margin-right: 0;
-  }
 
-  .row-fluid [class*="span"] {
-    display: block;
-    float: left;
-    width: 100%;
-    min-height: 30px;
-    margin-left: 0%;
-    *margin-left: 0%;
-    -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
-  }
-  .row-fluid [class*="span"]:first-child {
-    margin-left: 0;
-  }
-  .row-fluid .controls-row [class*="span"] + [class*="span"] {
-    margin-left: 0%;
-  }
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on March 13, 2013 */
+@font-face {
+    font-family: 'dk_pisangregular';
+    src: url('../fonts/dk_pisang-webfont.eot');
+    src: url('../fonts/dk_pisang-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/dk_pisang-webfont.woff') format('woff'),
+         url('../fonts/dk_pisang-webfont.ttf') format('truetype'),
+         url('../fonts/dk_pisang-webfont.svg#dk_pisangregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
-  .row-fluid .span12 {
-    width: 100%;
-    *width: 99.94680851063829%;
-  }
-  .row-fluid .span6 {
-    width: 50%;
-    *width: 49.97340425531915%;
-  }
-  .row-fluid .span3 {
-    width: 25%;
-    *width: 24.98670212765957%;
-  }
-  .row-fluid .span1 {
-    width: 8.333333333333333%;
-    *width: 8.328900709219858%;
-  }
+}
